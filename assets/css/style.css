@@ -1,6 +1,6 @@
 /* Default overide */
 /* Imported Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap");
 
 * {
   padding: 0;
@@ -70,7 +70,7 @@ nav {
 }
 
 /* Nav Toggle */
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
@@ -85,7 +85,7 @@ nav {
 /* Main Content */
 main {
   background-color: lightblue;
-/* Make main element take up any surplus space */
+  /* Make main element take up any surplus space */
   flex: 1 0 auto;
   margin-top: 47px;
 }
@@ -93,4 +93,28 @@ main {
 /* Footer */
 footer {
   background-color: orange;
+}
+
+/* Media Queries: Tablets and larger devices */
+@media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+#menu li {
+  padding-left: 1rem;
+}
+
+.nav-toggle-label {
+  display: none;
+}
 }
